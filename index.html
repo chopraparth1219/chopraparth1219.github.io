@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Parth Chopra | Developer Portfolio</title>
+<meta name="description" content="Parth Chopra: hackathon-tested developer building web apps, data models and ideas that work under pressure.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+<div class="photo" aria-hidden="true"></div>
+<div class="bar" id="bar"></div>
+<header class="top">
+  <a class="logo" href="#home">Parth Chopra</a>
+  <nav id="menu" aria-label="Sections">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#internship">Internship</a><a href="#hackathons">Hackathons</a><a href="#sih">SIH</a><a href="#certificates">Certificates</a><a href="#github">GitHub</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
+  </nav>
+  <button id="theme" aria-label="Switch light or dark theme">Theme</button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="wrap">
+    <h1><span class="l1">Hackathon-tested developer.</span><span class="l2">I ship web apps, data models, and ideas that work under pressure.</span></h1>
+    <p class="sub">Software engineer, web developer and data science student at VIT Bhopal.</p>
+    <div class="row">
+      <a class="btn" href="assets/resume.pdf" download>Download resume</a>
+      <a class="btn ghost" href="#projects">See my projects</a>
+    </div>
+  </div>
+  <a class="down" href="#about" aria-label="Scroll down">&darr;</a>
+</section>
+
+<section id="about"><div class="wrap">
+  <h2 class="rv">About me</h2>
+  <p class="lead rv">I'm a B.Tech CSE (Cloud Computing and Automation) student who likes turning a messy problem into something people can use. I work across Python, C++, the web and data science, and I enter hackathons to test it all under a deadline.</p>
+  <div class="stats rv">
+    <div><b data-n="8.6" data-d="1">0</b><span>SGPA, Semester 1</span></div>
+    <div><b data-n="44" data-s="th">0</b><span>rank of 220 teams, EFOS</span></div>
+    <div><b data-n="5">0</b><span>hackathons</span></div>
+    <div><b data-n="4">0</b><span>projects shipped</span></div>
+  </div>
+  <div class="grid">
+    <div class="card rv"><h3>VIT Bhopal University</h3><p>B.Tech CSE, Cloud Computing and Automation. SGPA 8.6 in Semester 1.</p></div>
+    <div class="card rv"><h3>St. Cecilia's Public School</h3><p>Class XII 80.75% (2025) with Computer Science. Class X 90.2% (2023). House Captain.</p></div>
+    <div class="card rv"><h3>Decode Labs</h3><p>Data Science Intern, June to July 2026. Four hands-on ML tasks.</p></div>
+    <div class="card rv"><h3>Clubs</h3><p>Core member of the Data Science Club and the Quantum Intelligence Club tech team.</p></div>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap"><h2 class="rv">Skills</h2><div class="grid" id="skills-grid"></div></div></section>
+<section id="projects"><div class="wrap"><h2 class="rv">Projects</h2><div class="grid" id="projects-grid"></div></div></section>
+
+<section id="internship"><div class="wrap">
+  <h2 class="rv">Internship case study: Decode Labs</h2>
+  <p class="lead rv">Four tasks in data preprocessing, exploratory analysis and machine learning, built with Pandas, NumPy, Matplotlib and Scikit-learn.</p>
+  <div class="grid" id="tasks"></div>
+</div></section>
+
+<section id="hackathons"><div class="wrap"><h2 class="rv">Hackathon timeline</h2><ol class="tl" id="hacks"></ol></div></section>
+
+<section id="sih"><div class="wrap">
+  <h2 class="rv">Smart India Hackathon presentation</h2>
+  <div class="split rv">
+    <div class="viewer"><iframe src="assets/sih/sih.pdf" title="SIH presentation"></iframe></div>
+    <div>
+      <h3>Problem</h3><p>Design and develop a smart, solar-powered drying and compact packaging system to support home-based agarbatti manufacturing by rural women artisans.</p>
+      <h3>Solution</h3><p>A solar-hybrid powered drying and packaging unit for home-based agarbatti manufacturing. It replaces inconsistent open-air sun drying with a controlled, automated, hygienic process.</p>
+      <h3>Key design decisions</h3>
+      <ul>
+        <li>Enclosed UV-C chamber that shuts off automatically when opened, following standard UV-C safety practices</li>
+        <li>Low-cost, readily available battery types in a modular, replaceable design</li>
+        <li>Field calibration and testing across multiple regions and climates before final deployment</li>
+        <li>Voice-first, icon-based companion app that needs minimal text input</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="certificates"><div class="wrap"><h2 class="rv">Certificates</h2><div class="grid" id="certs"></div></div></section>
+
+<section id="github"><div class="wrap">
+  <h2 class="rv">Live GitHub activity</h2>
+  <form id="ghform" class="row">
+    <label class="sr" for="repo">GitHub profile or repo link</label>
+    <input id="repo" placeholder="GitHub profile or repo link">
+    <button class="btn" type="submit">Check activity</button>
+  </form>
+  <div id="gh" aria-live="polite"></div>
+</div></section>
+
+<section id="reviews"><div class="wrap">
+  <h2 class="rv">Reviews</h2>
+  <div class="split">
+    <div id="reviews-list"></div>
+    <form id="fb" class="card rv">
+      <h3>Leave a review</h3>
+      <div id="stars" role="radiogroup" aria-label="Rating"></div>
+      <label for="nm">Your name</label><input id="nm" required>
+      <label for="cm">Comment</label><textarea id="cm" rows="4" required></textarea>
+      <button class="btn" type="submit">Send review</button>
+      <p id="fbmsg" aria-live="polite"></p>
+    </form>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2 class="rv">Let's build something</h2>
+  <div class="row rv" id="links"></div>
+  <blockquote class="rv"><p>Talk is cheap. Show me the code.</p><footer>Linus Torvalds</footer></blockquote>
+</div></section>
+</main>
+
+<footer class="end">Parth Chopra, 2026</footer>
+<dialog id="modal"><button id="close" aria-label="Close">&times;</button><div id="mbody"></div></dialog>
+<script src="js/main.js"></script>
+</body>
+</html>
